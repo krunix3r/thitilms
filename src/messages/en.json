@@ -34,7 +34,8 @@
     "hasAccount": "Already have an account?",
     "forgotPassword": "Forgot password?",
     "loginError": "Invalid email or password",
-    "signupError": "An error occurred. Please try again."
+    "signupError": "An error occurred. Please try again.",
+    "continueWithGoogle": "Continue with Google"
   },
   "dashboard": {
     "welcome": "Welcome",

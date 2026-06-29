@@ -34,7 +34,8 @@
     "hasAccount": "มีบัญชีแล้ว?",
     "forgotPassword": "ลืมรหัสผ่าน?",
     "loginError": "อีเมลหรือรหัสผ่านไม่ถูกต้อง",
-    "signupError": "เกิดข้อผิดพลาดในการสมัคร กรุณาลองใหม่"
+    "signupError": "เกิดข้อผิดพลาดในการสมัคร กรุณาลองใหม่",
+    "continueWithGoogle": "เข้าสู่ระบบด้วย Google"
   },
   "dashboard": {
     "welcome": "ยินดีต้อนรับ",
