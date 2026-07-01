@@ -4,6 +4,12 @@ import { NextResponse, type NextRequest } from 'next/server'
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
+  // ต้อง skip /auth/callback เพื่อไม่ให้ middleware ไป interfere กับ PKCE flow
+  // การเรียก getUser() ใน middleware จะทำลาย code_verifier cookie ก่อน route handler ทำงาน
+  if (pathname.startsWith('/auth/')) {
+    return NextResponse.next()
+  }
+
   const isAuthPage = pathname.startsWith('/login') || pathname.startsWith('/signup')
   const isProtected = pathname.startsWith('/dashboard') || pathname.startsWith('/course')
   const isPublic = !isProtected
